@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <style>
+            fieldset{
+                border-color: lightblue;
+                border-radius: 10px;
+            }
+        </style>
+        <fieldset>
+            <legend>Information</legend>
+            <form name="Sign Up" onsubmit="alert('Succesfully Submitted');" method="post">
+                Name: <input type="text" name="name"><br>
+                Age: <input type="number" name="age"><br>
+                Password: <input type="password" name="password"><br>
+                Like icecream? <input type="checkbox" name="icecream"><br>
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+        <br>
+        <form name="2nd Form" onsubmit="alert('Submited')" method="post">
+            <label>Text: </label><input type="text"/><br>
+            <label>Numbe: </label><input type="number" min="0" max="500" step="5"/><br>
+            <label>Button: </label><input type="button" value="Submit Info"/><br>
+            <label>Range</label><input type="range" min="0" max="100" value="50"/><br>
+            <label>E-mail</label><input type="email"/><br>
+            <label>Url</label><input type="url"/><br>
+            <label>Date</label><input type="date"/><br>
+            <label>Checkbox</label><input type="checkbox"/><br>
+            <label>Checkbox</label><input type="checkbox"/><input type="checkbox"/><input type="checkbox"/><br>
+            <label>Radio</label><input type="radio" name="accept"/><input type="radio" name="accept"/><input type="radio" name="accept"/><br>
+            <label>Hidden</label><input type="hidden"/><br>
+            <label>File</label><input type="file" multiple/><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3>Liked Drinks</h3>
+
+        Sprite <input type="checkbox" name="drink[]" value="Sprite"/> <br>
+        Coke <input type="checkbox" name="drink[]" value="Coke"/> <br>
+        Mountain Dew <input type="checkbox" name="drink[]" value="Mountain_Dew"/> <br>
+        Red Bull <input type="checkbox" name="drink[]" value="Red_Bull"/> <br>
+
+        <h3>Select Drink</h3>
+
+        Sprite <input type="radio" name="drink" value="Sprite"/> <br>
+        Coke <input type="radio" name="drink" value="Coke"/> <br>
+        Mountain Dew <input type="radio" name="drink" value="Mountain_Dew"/> <br>
+        Red Bull <input type="radio" name="drink" value="Red_Bull"/> <br>
+
+        <a href="index.html" target="_self">Go back</a>
+    </body>
+</html>
