@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            [title~="blue"] {
+                    background-color: #f0fdd2;
+                }
+            
+            [title|="green"] {
+                background-color: #5ca5f2;
+            }
+
+            [title^="6"] {
+                background: #ce63e4;
+            }
+
+            [title$="7"] {
+                background: #dfd02c;
+            }
+
+            [title*="gray"] {
+                background: #442ef0;
+                color: white;
+            }
+            a[href^="https"] {
+		        color: violet;
+	        }
+
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li title="blue car">Car</li>
+            <li title="yellow car">Sedan</li>
+            <li title="a fruit with the blue color">Blueberry</li>
+            <li title="red fruit">Apple</li>
+        </ul>
+
+        <ul>
+            <li title="green">Cactus</li>
+            <li title="green-car">Sedan</li>
+            <li title="green car">Blueberry</li>
+            <li title="red fruit">Apple</li>
+        </ul>
+
+        <ul>
+            <li title="6green">Cactus</li>
+            <li title="6green-car">Sedan</li>
+            <li title="6green car">Blueberry</li>
+            <li title="red fruit7">Apple</li>
+        </ul>
+
+        <ul>
+            <li title="augray redish">Cactus</li>
+            <li title="45gray-carau">Sedan</li>
+            <li title="2342grayasefcarae">Blueberry</li>
+            <li title="not-gray uiop">Apple</li>
+        </ul>   
+
+        <a href="http://safsae.com">Link1</a>
+        <a href="https://safsae.com">Link2</a>
+    </body>
+</html>
